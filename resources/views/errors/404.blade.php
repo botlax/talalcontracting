@@ -43,16 +43,11 @@
 			<!-- Main -->
 
 				<div class="wrapper">
-					<article class="container special" id="about-us">
-						<header><h2>YOU'RE DEFINITELY LOST..</h2></header>
-						<p><img src="/images/pic01.jpg" alt="Walid Abdulkader Photo" class="inline-photo"><span class="quote"></span>I would like to take this opportunity to introduce Talal Trading &#38; Contracting Company Co. (Talal) as our esteemed organization. Established in 1991, TALAL's main activities include civil and building construction, infrastructure and maintenance works. Until 1994, Talal kept a moderate scale of projects and work force. Since then, the company has grown rapidly and has become one of the leading Construction Companies in its classification. TALAL is classified by the Central Tenders Committee as a Grade A building construction contractor.</p>
-						<p>
-						With the help of a team of professionals experienced in the fields of Management, Construction, Engineering, Planning, Health &#38; Safety, Quality Assurance &#38; Quality Control and Administration, Talal has maintained an excellent record of delivering high quality Projects in time and within budget.</p>
-						<p>
-						In TALAL we consider Clients and their Consultants as partners and work closely with them to complete and deliver Project in a professional manner and to the satisfaction of all parties.</p>
-						<p class="author">Walid Abdulkader</p>
-						<p class="author-position">General Manager</p>
-					</article>
+					<section class="container" id="page-404">
+						<h2>404</h2>
+						<h3>Page not found</h3>
+						
+					</section>
 				</div>
 
 			<!-- Footer -->

@@ -164,7 +164,7 @@
 						<!-- Copyright -->
 							<div class="copyright">
 								<ul class="menu">
-									<li>&copy; Talal Trading &amp; Contracting Co. All rights reserved.</li><li>Developer: <a href="#">Botlax</a></li>
+									<li>&copy; {{date('Y')}} Talal Trading &amp; Contracting Co. All rights reserved.</li><li>Developer: <a href="#">Botlax</a></li>
 								</ul>
 							</div>
 					</div>

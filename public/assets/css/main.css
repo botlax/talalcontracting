@@ -3319,6 +3319,8 @@ nav#nav:nth-child(n) {
 }
 .heading strong{
 	font-size: 1.5em;
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
 }
 
 .page-nav a.active{
@@ -3504,6 +3506,22 @@ table.bordered td{
 
 #clients h3{
 	text-indent: -9999px;
+}
+
+#page-404 h2,#page-404 h3{
+	text-align: center;
+	font-family: 'Droid Serif', serif;
+	font-weight: 700;
+	font-size: 8em;
+}
+
+#page-404 h3{
+	font-weight: 400;
+	font-size: 2em;
+	border-top: 1px solid #ccc;
+	width: 70%;
+	margin: 0 auto;
+	padding: 1em 0;
 }
 /*---------contact--------*/
 
