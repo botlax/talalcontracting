@@ -3538,8 +3538,8 @@ table.bordered td{
 	margin-bottom: 1.2em;
 }
 
-#contact-form input[type=submit]{
-	float: right;
+#contact-form button{
+	font-size: 1em;
 }
 
 input:focus, textarea:focus{
