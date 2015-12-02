@@ -71,7 +71,7 @@ Projects
 		}
 
 		if (isTouchDevice()) {
-		    // on Mobile
+		    alert('mobile!');
 		}
 		else {
 		    alert('dektop!');
