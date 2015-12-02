@@ -1,5 +1,6 @@
 @extends('master')
 
+
 @section('title')
 About Us
 @stop
