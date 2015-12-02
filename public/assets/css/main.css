@@ -2550,6 +2550,7 @@
 			margin: 0 2em 0 0;
 			white-space: normal;
 			opacity: 1.0;
+			vertical-align: top;
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -2567,6 +2568,10 @@
 				width: auto;
 				margin-right: -2em;
 				margin-bottom: 3em;
+			}
+
+			.carousel article header{
+				height: 3em;
 			}
 
 			.carousel article p {
@@ -3464,7 +3469,7 @@ h4{
 	width: 33%;
 }
 #footer-about h4{
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 #footer-about p{
 	text-align: left;
@@ -3734,6 +3739,7 @@ div[id*=leanmodal] img{
 }
 
 @media screen and (max-width: 736px) {
+	
 	.inline-photo{
 		display: block;
 		float: none;
