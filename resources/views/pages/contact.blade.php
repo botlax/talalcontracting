@@ -80,7 +80,7 @@ Contact Us
 			<div class="7u 12u(mobile)">
 				{!! Form::textarea('message',null,['placeholder'=>'Message*','rows'=>7]) !!}
 
-				{!! Form::submit('SEND MESSAGE') !!}
+				<button class="pull-right send-message">Send Message</button>
 			</div>
 		{!! Form::close() !!}
 	</section>
@@ -159,6 +159,10 @@ Contact Us
 	    $('#contact-form').submit(function(e){
 	    	e.preventDefault();
 	    	if($("#contact-form").valid()){
+	    		$(this).find('input[type=text]').prop('disabled',true);
+		    	$(this).find('textarea').prop('disabled',true);
+		    	$(this).find('button').html('<i class="fa fa-cog fa-spin fa-lg"></i>');
+		    	$(this).find('button').prop('disabled',true);
 				$.ajax({
 				      url: '/contact-us',
 				      dataType:'text',
@@ -166,12 +170,17 @@ Contact Us
 				      data: {'name':$('input[name=name]').val(),'subject':$('input[name=subject]').val(),'email':$('input[name=email]').val(),'message':$('textarea[name=message]').val(),},
 				      success: function(data){
 				      	$('#contact-form').hide();
-				      	$('.contact-wrap').append(data);
+				      	$('.contact-wrap').append('<img src="'+data+'" class="flex">');
 				      },
-				      error: function(ts) { var win = window.open('', '_self');
-					win.document.getElementsByTagName('Body')[0].innerText = ts.responseText; }
+				      error: function() { alert('An error has occured while sending your message. Please try again in a while.') }
 
 				});
+			}
+			else{
+				$('#contact-form').find('button').html('Send Message');
+				$('#contact-form').find('input[type=text]').prop('disabled',false);
+		    	$('#contact-form').find('textarea').prop('disabled',false);
+		    	$('#contact-form').find('button').prop('disabled',false);
 			}
 	    });
 	    
