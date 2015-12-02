@@ -137,7 +137,7 @@ class MainController extends Controller
             $mail->subject('Inquiry sent from www.talalcontracting.com');
         });
 
-        echo '<img src="{{url("/images/thankyou.png")}}" class="flex">';
+        echo url('images/thankyou.png');
     }
 
     public function careers()
@@ -217,7 +217,7 @@ class MainController extends Controller
 
         Mail::later(60,'email.newapplicant',$data,function($mail)use($applicant,$destination,$position){
             $mail->from('info@talalcontracting.com', 'Applicant - '.$applicant['firstname'].' '.$applicant['lastname']);
-            $mail->to('sachin@talalcontracting.com', 'HR Department');
+            $mail->to('lacsinapaul@gmail.com', 'HR Department');
             $mail->bcc('it@talalcontracting.com');
             $mail->replyTo($applicant['email'], $applicant['firstname'].' '.$applicant['lastname']);
             $mail->subject('Application for '.$position->position.' - '.$applicant['firstname'].' '.$applicant['lastname']);
