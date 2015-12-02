@@ -65,7 +65,18 @@ Projects
 		$('figure').mouseleave(function(){
 			$(this).find('figcaption').stop(true).fadeOut(300);
 		});
+		
+		function isTouchDevice() {
+		    return 'ontouchstart' in document.documentElement;
+		}
 
+		if (isTouchDevice()) {
+		    // on Mobile
+		}
+		else {
+		    alert('dektop!');
+		}
+		
 		$('.page-nav a[data-id=all]').addClass('active');
 
 		$('.page-nav a').click(function(e){
