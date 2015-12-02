@@ -112,43 +112,43 @@ About Us
 		</header>
 		<div class="row">
 			<article class="4u 6u(narrower) full-mobile special">
-				<img src="images/what-we-do/beautify.png" alt="" />
+				<img src="images/what-we-do/beautify.png" alt="Beautify Clipart" class="flex"/>
 				<header>
 					<h3>Asphalt and Beautification Works</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special">
-				<img src="images/what-we-do/mosque.png" alt="" />
+				<img src="images/what-we-do/mosque.png" alt="Mosque Clipart" class="flex"/>
 				<header>
 					<h3>Commercial multi-storey Buildings, Office Buildings, Mosques, Palaces, Villa Compounds and individual Villas</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special">
-				<img src="images/what-we-do/factory.png" alt="" />
+				<img src="images/what-we-do/factory.png" alt="Factory Clipart" class="flex"/>
 				<header>
 					<h3>Factory Buildings and Labour Accommodations</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special clear">
-				<img src="images/what-we-do/landscape.png" alt="" />
+				<img src="images/what-we-do/landscape.png" alt="Landscaping Symbol Clipart" class="flex"/>
 				<header>
 					<h3>Hard and Soft Landscaping</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special">
-				<img src="images/what-we-do/pipe.png" alt="" />
+				<img src="images/what-we-do/pipe.png" alt="Pipe Works Clipart" class="flex"/>
 				<header>
 					<h3>Drainage Networks and Connections</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special">
-				<img src="images/what-we-do/telephone.png" alt="" />
+				<img src="images/what-we-do/telephone.png" alt="Telephone Clipart" class="flex"/>
 				<header>
 					<h3>Telephone Cables and Manholes</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special clear">
-				<img src="images/what-we-do/helipad.png" alt="" />
+				<img src="images/what-we-do/helipad.png" alt="Helipad Symbol Clipart" class="flex"/>
 				<header>
 					<h3>Helipads</h3>
 				</header>
