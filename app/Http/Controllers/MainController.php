@@ -217,7 +217,7 @@ class MainController extends Controller
 
         Mail::later(60,'email.newapplicant',$data,function($mail)use($applicant,$destination,$position){
             $mail->from('info@talalcontracting.com', 'Applicant - '.$applicant['firstname'].' '.$applicant['lastname']);
-            $mail->to('lacsinapaul@gmail.com', 'HR Department');
+            $mail->to('sachin@talalcontracting.com', 'HR Department');
             $mail->bcc('it@talalcontracting.com');
             $mail->replyTo($applicant['email'], $applicant['firstname'].' '.$applicant['lastname']);
             $mail->subject('Application for '.$position->position.' - '.$applicant['firstname'].' '.$applicant['lastname']);
