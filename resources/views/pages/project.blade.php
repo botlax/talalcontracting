@@ -71,10 +71,7 @@ Projects
 		}
 
 		if (isTouchDevice()) {
-		    alert('mobile!');
-		}
-		else {
-		    alert('dektop!');
+		    $('figure figcaption').show();
 		}
 		
 		$('.page-nav a[data-id=all]').addClass('active');
