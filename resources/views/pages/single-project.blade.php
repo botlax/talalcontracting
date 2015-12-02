@@ -40,10 +40,10 @@
 				<nav>
 					<ul>
 						@if($prevLink)
-						<li><a class="pull-left" href="{{url('/projects/'.str_replace(' ','-',strtolower($prevLink)))}}" title="{{$prevLink}}">Previous</a></li>
+						<li><a class="pull-left" href="{{url('/projects/'.str_replace(' ','-',strtolower($prevLink)))}}" title="{{$prevLink}}"><i class="fa fa-fa-chevron-circle-left"></i>&nbsp; Previous</a></li>
 						@endif
 						@if($nextLink)
-						<li><a class="pull-right" href="{{url('/projects/'.str_replace(' ','-',strtolower($nextLink)))}}" title="{{$nextLink}}">Next</a></li>
+						<li><a class="pull-right" href="{{url('/projects/'.str_replace(' ','-',strtolower($nextLink)))}}" title="{{$nextLink}}">Next&nbsp; <i class="fa fa-fa-chevron-circle-right"></i></a></li>
 						@endif
 					</ul>
 				</nav>
