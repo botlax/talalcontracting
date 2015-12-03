@@ -3540,15 +3540,11 @@ table.bordered td{
 	opacity: 0;
 }
 
-#our-principles .row .row:nth-child(odd){
-	position: relative;
-	left: -9999px;
-}
-
-#our-principles .row .row:nth-child(even){
+#our-principles .row .row{
 	position: relative;
 	right: -9999px;
 }
+
 /*---------contact--------*/
 
 #contact-form textarea{
