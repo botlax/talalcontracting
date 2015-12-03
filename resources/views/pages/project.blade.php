@@ -65,7 +65,7 @@ Projects
 		$('figure').mouseleave(function(){
 			$(this).find('figcaption').stop(true).fadeOut(300);
 		});
-		
+
 		function isTouchDevice() {
 		    return 'ontouchstart' in document.documentElement;
 		}
@@ -73,7 +73,7 @@ Projects
 		if (isTouchDevice()) {
 		    $('figure figcaption').show();
 		}
-		
+
 		$('.page-nav a[data-id=all]').addClass('active');
 
 		$('.page-nav a').click(function(e){
@@ -86,6 +86,15 @@ Projects
 			if(dataId != 'all'){
 				$('#projects li').fadeOut(500);
 				$('#projects li[data-id='+dataId+']').fadeIn(500);
+
+				var counter = 0;
+				$('#projects li[data-id='+dataId+']').each(function(){
+					counter++;
+				});
+				if(counter == 0){
+					
+					$('#projects').append('<li class="12u align-center"><i class="fa fa-cog fa-5x fa-spin"></i></li><li class="12u align-center">This page is under construction</i></li>')
+				}
 			}
 			else{
 				$('#projects li').fadeIn(500);
