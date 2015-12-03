@@ -1,6 +1,5 @@
 @extends('master')
 
-
 @section('title')
 About Us
 @stop
@@ -112,49 +111,49 @@ About Us
 		</header>
 		<div class="row">
 			<article class="4u 6u(narrower) full-mobile special">
-				<img src="images/what-we-do/beautify.png" alt="Beautify Clipart" class="flex"/>
+				<a href="#" class="image featured"><img src="images/what-we-do/beautify.png" alt="" /></a>
 				<header>
 					<h3>Asphalt and Beautification Works</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special">
-				<img src="images/what-we-do/mosque.png" alt="Mosque Clipart" class="flex"/>
+				<a href="#" class="image featured"><img src="images/what-we-do/mosque.png" alt="" /></a>
 				<header>
 					<h3>Commercial multi-storey Buildings, Office Buildings, Mosques, Palaces, Villa Compounds and individual Villas</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special">
-				<img src="images/what-we-do/factory.png" alt="Factory Clipart" class="flex"/>
+				<a href="#" class="image featured"><img src="images/what-we-do/factory.png" alt="" /></a>
 				<header>
 					<h3>Factory Buildings and Labour Accommodations</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special clear">
-				<img src="images/what-we-do/landscape.png" alt="Landscaping Symbol Clipart" class="flex"/>
+				<a href="#" class="image featured"><img src="images/what-we-do/landscape.png" alt="" /></a>
 				<header>
 					<h3>Hard and Soft Landscaping</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special">
-				<img src="images/what-we-do/pipe.png" alt="Pipe Works Clipart" class="flex"/>
+				<a href="#" class="image featured"><img src="images/what-we-do/pipe.png" alt="" /></a>
 				<header>
 					<h3>Drainage Networks and Connections</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special">
-				<img src="images/what-we-do/telephone.png" alt="Telephone Clipart" class="flex"/>
+				<a href="#" class="image featured"><img src="images/what-we-do/telephone.png" alt="" /></a>
 				<header>
 					<h3>Telephone Cables and Manholes</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special clear">
-				<img src="images/what-we-do/helipad.png" alt="Helipad Symbol Clipart" class="flex"/>
+				<a href="#" class="image featured"><img src="images/what-we-do/helipad.png" alt="" /></a>
 				<header>
 					<h3>Helipads</h3>
 				</header>
 			</article>
 			<article class="4u 6u(narrower) full-mobile special">
-				<img src="images/what-we-do/maintenance.png" alt="" />
+				<a href="#" class="image featured"><img src="images/what-we-do/maintenance.png" alt="" /></a>
 				<header>
 					<h3>Refurbishment and General Maintenance for Offices and Residential Buildings</h3>
 				</header>
@@ -285,6 +284,79 @@ About Us
 			}
 			else if(heightToFix >0){
 				$('nav.page-nav').css({"position":"relative","top":"3em"});
+			}
+		});
+
+		$(window).scroll(function(){
+			var heightToFix = $('#our-team').position().top - $(window).scrollTop();
+			if(heightToFix < ($( window ).height() / 2)){
+				var counter = 300;
+				$('.team-member').each(function(){
+					$(this).animate({
+					    left:'0',
+					    opacity:'1'
+					},counter);
+					counter = counter + 300;
+				});
+			}
+		});
+
+		$(window).scroll(function(){
+			var heightToFix = $('#clients').position().top - $(window).scrollTop();
+			if(heightToFix < ($( window ).height() / 2)){
+				var counter = 200;
+				$('#clients section').each(function(){
+					$(this).animate({
+					    opacity:'1'
+					},counter);
+					counter = counter + 200;
+				});
+			}
+		});
+
+		$(window).scroll(function(){
+			var heightToFix = $('#what-we-do').position().top - $(window).scrollTop();
+			if(heightToFix < ($( window ).height() / 2)){
+				var counter = 200;
+				$('#what-we-do article').each(function(){
+					$(this).animate({
+					   top:'0',
+					    opacity:'1'
+					},counter);
+					counter = counter + 200;
+				});
+			}
+		});
+
+		$(window).scroll(function(){
+			var heightToFix = $('#hse').position().top - $(window).scrollTop();
+			if(heightToFix < ($( window ).height() / 2)){
+				var counter = 1000;
+				$('#hse img').animate({
+				    opacity:'1'
+				},counter);
+			}
+		});
+
+		$(window).scroll(function(){
+			var heightToFix = $('#our-principles').position().top - $(window).scrollTop();
+			if(heightToFix < ($( window ).height() / 2)){
+				var counter = 500;
+				var x = 1;
+				$('#our-principles .row .row').each(function(){
+					if(x%2 == 0){
+						$(this).animate({
+						   right:'0'
+						},counter);
+					}
+					else{
+						$(this).animate({
+						   left:'0'
+						},counter);
+					}
+					counter = counter + 300;
+					x++;
+				});
 			}
 		});
 
