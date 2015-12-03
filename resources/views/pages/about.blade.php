@@ -344,7 +344,7 @@ About Us
 				var counter = 500;
 				$('#our-principles .row .row').each(function(){
 					$(this).animate({
-						right:'0'
+						left:'0'
 					},counter);
 					counter = counter + 300;
 				});
