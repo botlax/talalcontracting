@@ -342,20 +342,11 @@ About Us
 			var heightToFix = $('#our-principles').position().top - $(window).scrollTop();
 			if(heightToFix < ($( window ).height() / 2)){
 				var counter = 500;
-				var x = 1;
 				$('#our-principles .row .row').each(function(){
-					if(x%2 == 0){
-						$(this).animate({
-						   right:'0'
-						},counter);
-					}
-					else{
-						$(this).animate({
-						   left:'0'
-						},counter);
-					}
+					$(this).animate({
+						right:'0'
+					},counter);
 					counter = counter + 300;
-					x++;
 				});
 			}
 		});
