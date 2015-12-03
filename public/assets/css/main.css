@@ -3542,7 +3542,7 @@ table.bordered td{
 
 #our-principles .row .row{
 	position: relative;
-	right: -9999px;
+	left: -9999px;
 }
 
 /*---------contact--------*/
