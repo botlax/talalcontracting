@@ -29,7 +29,7 @@ Apply
 
 				<header>
 					<h2 class="align-left">{{$position->position}}</h2>
-					<p>Thank you for considering a career at Talal. Please take a minute to fill out the following form. After you have completed your application an email will be sent to you with information about how to check the status of your application.</p>
+					<p>Thank you for considering a career at Talal. Please take a minute to fill out the following form. After you have completed your application an email will be sent to you containing your application details and confirmation that we have received your entry.</p>
 				</header>
 				@if (count($errors) > 0)
 					<p class="error">Please fix the errors below</p>
