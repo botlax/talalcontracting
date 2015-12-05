@@ -89,9 +89,37 @@ About Us
 						<h3>Ooredoo</h3>
 						<a href="http://www.ooredoo.qa/" target="_blank"><img src="{{url('images/clients/ooredoo.png')}}" alt="Ooredoo" title="Ooredoo" class="flex"/></a>
 					</section>
+					<section class="4u 6u(mobile)">
+						<h3>Qatar Foundation</h3>
+						<a href="http://www.qf.org.qa/" target="_blank"><img src="{{url('images/clients/qf.png')}}" alt="Qatar Foundation" title="Qatar Foundation" class="flex"/></a>
+					</section>
+					<section class="4u 6u(mobile)">
+						<h3>Qatar Motor &amp; Motorcycle Federation</h3>
+						<a href="http://www.qmmf.com/" target="_blank"><img src="{{url('images/clients/qmmf.png')}}" alt="Qatar Motor &amp; Motorcycle Federation" title="Qatar Motor &amp; Motorcycle Federation" class="flex"/></a>
+					</section>
+					<section class="4u 6u(mobile)">
+						<h3>Qatar Museum Authority</h3>
+						<a href="http://www.qm.org.qa/en" target="_blank"><img src="{{url('images/clients/qma.png')}}" alt="Qatar Museum Authority" title="Qatar Museum Authority" class="flex"/></a>
+					</section>
+					<section class="12u">
+						<h3 class="align-center"><a href="#clients-leanmodal" rel="leanModal">Others Clients</a></h3>
+					</section>
 				</div>
 			</div>
 		</div>
+	</section>
+</div>
+
+<div id="clients-leanmodal">
+	<a class="modal_close" href="#"></a>
+	<section>
+		<ul class="fa-ul">
+			<li><i class="fa-li fa fa-user"></i>Ministry of AWQAF &amp; and Islamic Affairs</li>
+			<li><i class="fa-li fa fa-user"></i>Drainage Department</li>
+			<li><i class="fa-li fa fa-user"></i>Gulf Helecopters</li>
+			<li><i class="fa-li fa fa-user"></i>Private Real Estate Investors</li>
+			<li><i class="fa-li fa fa-user"></i>Private Clients</li>
+		</ul>
 	</section>
 </div>
 
@@ -334,11 +362,20 @@ About Us
 			var heightToFix = $('#our-principles').position().top - $(window).scrollTop();
 			if(heightToFix < ($( window ).height() / 2)){
 				var counter = 500;
+				var x = 1;
 				$('#our-principles .row .row').each(function(){
-					$(this).animate({
-						left:'0'
-					},counter);
+					if(x%2 == 0){
+						$(this).animate({
+						   right:'0'
+						},counter);
+					}
+					else{
+						$(this).animate({
+						   left:'0'
+						},counter);
+					}
 					counter = counter + 300;
+					x++;
 				});
 			}
 		});

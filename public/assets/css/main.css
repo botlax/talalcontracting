@@ -3510,6 +3510,10 @@ table.bordered td{
 	text-indent: -9999px;
 }
 
+#clients section:last-child h3{
+	text-indent: 0;
+}
+
 #clients section{
 	opacity: 0;
 }
@@ -3540,9 +3544,19 @@ table.bordered td{
 	opacity: 0;
 }
 
-#our-principles .row .row{
+#our-principles .row .row:nth-child(odd){
 	position: relative;
 	left: -9999px;
+}
+
+#our-principles .row .row:nth-child(even){
+	position: relative;
+	right: -9999px;
+}
+
+#clients-leanmodal{
+	width: 70%;
+	padding: 3em;
 }
 
 /*---------contact--------*/
@@ -3605,7 +3619,7 @@ div[id*=leanmodal]{
 	position: relative;
 	background-color: #fff;
 	width: 90%; height: 80%;
-	padding:2em;
+	padding:3em 2em;
 	overflow: auto;
 	display: none;
 }
@@ -3805,6 +3819,11 @@ div[id*=leanmodal] img{
 
 	.team-member{
 		font-size: 1.2em;
+	}
+
+	#clients-leanmodal{
+		width: 70%;
+		padding: 3em 1em;
 	}
 }
 
