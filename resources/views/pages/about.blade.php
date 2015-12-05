@@ -74,16 +74,8 @@ About Us
 						<a href="http://www.ashghal.gov.qa/en/Pages/default.aspx" target="_blank"><img src="{{url('images/clients/ashghal.png')}}" alt="Ashghal - Public Works Authority" title="Ashghal - Public Works Authority" class="flex"/></a>
 					</section>
 					<section class="4u 6u(mobile)">
-						<h3>Ministry of Foreign Affairs</h3>
-						<a href="http://www.mofa.gov.qa/en/Pages/default.aspx" target="_blank"><img src="{{url('images/clients/ministry-of-foreign-affairs.png')}}" alt="Ministry of Foreign Affairs" title="Ministry of Foreign Affairs" class="flex"/></a>
-					</section>
-					<section class="4u 6u(mobile)">
 						<h3>Ministry of Municipality and Urban Planning</h3>
 						<a href="www.baladiya.gov.qa/cui/index.dox?siteID" target="_blank"><img src="{{url('images/clients/ministry-of-urban-planning.png')}}" alt="Ministry of Municipality and Urban Planning" title="Ministry of Municipality and Urban Planning" class="flex"/></a>
-					</section>
-					<section class="4u 6u(mobile)">
-						<h3>Qatar International Islamic Bank</h3>
-						<a href="http://www.qiib.com.qa/" target="_blank"><img src="{{url('images/clients/qiib.png')}}" alt="Qatar International Islamic Bank" title="Qatar International Islamic Bank" class="flex"/></a>
 					</section>
 					<section class="4u 6u(mobile)">
 						<h3>Qatar General Insurance</h3>
