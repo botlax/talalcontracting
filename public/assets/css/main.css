@@ -3081,6 +3081,7 @@
 #header header h1 span{
 	display: none;
 }
+
 #header header h1 a{
 	display: inline-block;
 }
@@ -3538,6 +3539,10 @@ table.bordered td{
 	opacity: 0;
 	position: relative;
 	top:-10em;
+}
+
+#what-we-do article img{
+	border-radius: 50%;
 }
 
 #hse img{
