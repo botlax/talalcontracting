@@ -20,7 +20,7 @@ Careers
 			<p>
 				<em>We’re always on the lookout for more talented people to join our company. Apply online today!</em>
 			</p>
-		</header>
+		</header><!--
 		@foreach($positions as $position)
 		<article>
 			<header>
@@ -32,6 +32,10 @@ Careers
 			</footer>
 		</article>
 		@endforeach
+		-->
+		<article>
+			<p>There are no vacancies at the moment.</p>
+		</article>
 	</section>
 </div>
 @stop
