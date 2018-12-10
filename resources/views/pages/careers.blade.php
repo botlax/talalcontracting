@@ -20,19 +20,7 @@ Careers
 			<p>
 				<em>We’re always on the lookout for more talented people to join our company. Apply online today!</em>
 			</p>
-		</header><!--
-		@foreach($positions as $position)
-		<article>
-			<header>
-				<h3>{{$position->position}}</h3>
-			</header>
-			<p>{{$position->description}} <a href="{{url('/careers/'.str_replace(' ','-',strtolower($position->position)))}}" class="read-more">Read More</a></p>
-			<footer class="clearfix">
-				<a href="{{url('/careers/'.$position->position_link.'/apply')}}" class="button pull-right">Apply</a>
-			</footer>
-		</article>
-		@endforeach
-		-->
+		</header>
 		<article>
 			<p>There are no vacancies at the moment.</p>
 		</article>
