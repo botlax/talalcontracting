@@ -20,7 +20,7 @@ About Us
 		With the help of a team of professionals experienced in the fields of Management, Construction, Engineering, Planning, Health &#38; Safety, Quality Assurance &#38; Quality Control and Administration, Talal has maintained an excellent record of delivering high quality Projects in time and within budget.</p>
 		<p>
 		In TALAL we consider Clients and their Consultants as partners and work closely with them to complete and deliver Project in a professional manner and to the satisfaction of all parties.</p>
-		<p class="author">Walid Abdulkader</p>
+		<p class="author">Walid Abdelkader</p>
 		<p class="author-position">General Manager</p>
 	</article>
 </div>
