@@ -99,7 +99,7 @@
 								</p>
 							</section>
 							<aside class="4u 12u(mobile) aside-right block-link">
-								<a href="#"><i class="fa fa-download"></i>&nbsp; Company Profile</a>
+								<a href="http://talalcontracting.com/images/TTC.pdf"><i class="fa fa-download"></i>&nbsp; Company Profile</a>
 								<a href="{{url('contact-us')}}"><i class="fa fa-phone"></i>&nbsp; Contact Us</a>
 							</aside>
 						</div>
